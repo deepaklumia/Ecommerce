@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import {addToCart} from '../reactRedux/action/index';
+import { addToCart } from '../reactRedux/action/index';
 export default function Home() {
-  
+
   let [products, setProducts] = useState([]);
   const dispatch = useDispatch()
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Home() {
     })
       .catch((error) => { console.log(error) })
   }, []);
- 
+
   return (
     <>
       <div className='d-flex  flex-wrap mt-3 justify-content-center gap-3 '>
@@ -25,7 +25,7 @@ export default function Home() {
                 <h5 className="card-title">{(product.title).substring(0, 20)}</h5>
                 <p className="card-text">{product.description.substring(0, 80)}...</p>
                 <p>Price: ${product.price}</p>
-                <a className="btn btn-primary" onClick={()=>{dispatch(addToCart(product,"add"))}}>Add to Card</a>
+                <a className="btn btn-primary" onClick={() => { dispatch(addToCart(product, "add")) }}>Add to Card</a>
               </div>
             </div>
           )

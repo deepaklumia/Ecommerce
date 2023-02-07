@@ -1,13 +1,13 @@
 export const incNumber = (id) => {
   return {
     type: 'INCREMENT',
-    payload:id
+    payload: id
   }
 }
 export const decNumber = (id) => {
   return {
     type: 'DECREMENT',
-    payload:id
+    payload: id
   }
 }
 export const addToCart = (product, add) => {

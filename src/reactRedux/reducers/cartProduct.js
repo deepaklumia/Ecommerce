@@ -28,10 +28,10 @@ export const addProductInCart = (state = [], action) => {
       }
     })
     return [...state];
-  } else if(action.type==='DECREMENT'){
-     state.forEach((data) => {
+  } else if (action.type === 'DECREMENT') {
+    state.forEach((data) => {
       if (action.payload === data.id) {
-        if(data.quantity>1){
+        if (data.quantity > 1) {
           data['quantity'] -= 1;
         }
       }
