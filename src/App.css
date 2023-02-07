@@ -17,6 +17,9 @@ main {
   width: 50%;
   padding: 10px;
 }
+.card{
+  cursor:pointer;
+}
 .product-image{
   height:100px;
   width:100px;
