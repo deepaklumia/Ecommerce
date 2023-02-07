@@ -1,0 +1,45 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+.box:hover{
+/*   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.nav{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.cart-product{
+/*   margin:10px 300px; */
+/*   justify-content:center; */
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.product-image{
+  height:100px;
+  width:100px;
+/*   display:inline=block; */
+}
+.product-detail p{
+  height:100px;
+  width:100px;
+}
+.add-containt button{
+  height:50px;
+  width:50px;
+  border-radius:100px;
+  border:none;
+  background-color:blue;
+}
+.price p{
+  font-weight:bolder;
+  font-size:1rem;
+}
+.price button{
+  height:40px;
+  width:100px;
+   border:none;
+  background-color:blue;
+}
